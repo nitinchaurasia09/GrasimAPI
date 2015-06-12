@@ -60,6 +60,7 @@ namespace GrasimAPI.Controllers
         /// </summary>
         /// <param name="user">User object</param>
         /// <returns>Return the status of action performed</returns>
+        [HttpPost]
         public bool Post(Guid user, string password)
         {
             return this.userRepository.UpdatePassword(user, password);
