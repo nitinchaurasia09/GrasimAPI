@@ -10,7 +10,7 @@ namespace GrasimAPI.Controllers
     /// <summary>
     /// User functionality
     /// </summary>
-   [EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UserController : ApiController
     {
         UserRepository userRepository;
@@ -54,15 +54,15 @@ namespace GrasimAPI.Controllers
             return this.userRepository.UserDetail(user);
         }
 
-        
+
         /// <summary>
         /// Function modify the password
         /// </summary>
         /// <param name="user">User object</param>
         /// <returns>Return the status of action performed</returns>
-        public bool Put([FromBody]User user)
+        public bool Post(Guid user, string password)
         {
-            return this.userRepository.UpdatePassword(user.GUID, user.Password);
+            return this.userRepository.UpdatePassword(user, password);
         }
 
         // DELETE api/<controller>/5
