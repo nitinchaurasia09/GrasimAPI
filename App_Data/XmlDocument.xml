@@ -598,13 +598,6 @@
             <param name="user">User object</param>
             <returns>Return the status of action performed</returns>
         </member>
-        <member name="M:GrasimAPI.Controllers.UserController.Post(System.Guid,System.String)">
-            <summary>
-            Function modify the password
-            </summary>
-            <param name="user">User object</param>
-            <returns>Return the status of action performed</returns>
-        </member>
         <member name="T:GrasimAPI.Controllers.UtilityController">
             <summary>
             Achive the common functionality
