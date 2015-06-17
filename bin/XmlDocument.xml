@@ -510,6 +510,18 @@
             <param name="TailorId">Unique Identifier of Tailor</param>
             <returns>Return the gallery list</returns>
         </member>
+        <member name="T:GrasimAPI.Controllers.QueryController">
+            <summary>
+            User functionality
+            </summary>
+        </member>
+        <member name="M:GrasimAPI.Controllers.QueryController.Post(Models.Query)">
+            <summary>
+            Function add the query function
+            </summary>
+            <param name="user">User object</param>
+            <returns>Return the status of action performed</returns>
+        </member>
         <member name="T:GrasimAPI.Controllers.ReviewController">
             <summary>
             Review functionality
