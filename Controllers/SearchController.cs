@@ -66,6 +66,12 @@ namespace GrasimAPI.Controllers
         }
 
         [HttpGet]
+        public IList<TailorMaster> SearchTailor(decimal Latitude, decimal Longitude, int nearby)
+        {
+            return this.tailorRepository.SearchTailor(Latitude, Longitude, nearby);
+        }
+
+        [HttpGet]
         public TailorMaster SearchTailor(Guid TailorId, decimal? Latitude, decimal? Longitude)
         {
             TailorMaster resultList = new TailorMaster();
